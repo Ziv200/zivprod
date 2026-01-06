@@ -365,6 +365,10 @@ img {
     padding: 30px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
 }
 
 .artist-img-wrapper {
@@ -372,18 +376,33 @@ img {
     height: 150px;
     margin: 0 auto 20px;
     position: relative;
+    display: block;
+    /* Important for anchor tag */
 }
 
 .artist-placeholder {
     width: 100%;
     height: 100%;
-    background-color: #222;
     border-radius: 50%;
     display: flex;
+    /* For centering icon if used */
     align-items: center;
     justify-content: center;
+    background-color: #222;
     border: 3px solid var(--primary-gold);
-    overflow: hidden;
+}
+
+.artist-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary-gold);
+    transition: transform 0.3s ease;
+}
+
+.artist-img-wrapper:hover img {
+    transform: scale(1.05);
 }
 
 .artist-placeholder i {
@@ -400,6 +419,8 @@ img {
     color: #aaa;
     margin-bottom: 20px;
     font-size: 0.95rem;
+    flex-grow: 1;
+    /* Pushes bottom buttons down */
 }
 
 /* Why Us Section */

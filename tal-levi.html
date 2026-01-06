@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טל לוי - זמר חפלות ואירועים | זיו הפקות</title>
+    <meta name="description" content="הזמינו את טל לוי לאירוע שלכם. זמר החפלות העולה עם אנרגיה שיא וחיבור מחשמל לקהל.">
+
+    <!-- Shared Head Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">זיו הפקות</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">אודות</a></li>
+                    <li><a href="index.html#services">שירותים</a></li>
+                    <li><a href="index.html#artists">אמנים</a></li>
+                    <li><a href="index.html#contact">צור קשר</a></li>
+                </ul>
+                <a href="#book-now" class="btn btn-gold btn-sm">הזמן עכשיו</a>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artist Hero -->
+    <section class="hero-section"
+        style="background-image: linear-gradient(to bottom, rgba(10,10,18,0.3), #0a0a12), url('images/tal-hero.png'); height: 60vh; background-position: top center; background-color: #1a1a25;">
+        <div class="container hero-content">
+            <h1 class="fade-in-up">טל לוי</h1>
+            <p class="hero-subtitle fade-in-up delay-1">מלך החפלות והאנרגיה</p>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">על האמן</h2>
+                <h3 class="gold-text">הופך כל אירוע לחגיגה</h3>
+                <p>טל לוי הוא זמר החפלות העולה מבית "זיו הפקות". עם קול מרשים, ים של אנרגיה וחיבור מיידי שמקפיץ את הקהל,
+                    טל הוא הבחירה המנצחת למי שמחפש שמח אמיתי.</p>
+                <p>מתמחה במוזיקה מזרחית, ים תיכונית וחפלות אותנטיות שנמשכות עד השעות הקטנות. מתאים במיוחד לחתונות,
+                    אירועי חברה, מסיבות רווקים/ות וכל מקום שצריך בו שמח.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/tal-bio.png" alt="טל לוי בהופעה"
+                    style="border-radius: 10px; border: 2px solid var(--primary-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.5); min-height: 300px; background: #222;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book-now" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title center-text">הזמנת הופעה</h2>
+            <div class="contact-wrapper" style="max-width: 800px; margin: 0 auto; display: block;">
+                <p class="center-text" style="margin-bottom: 30px; color: #ccc;">מלאו את הפרטים ונחזור אליכם לבדיקת
+                    זמינות עבור טל לוי</p>
+
+                <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="subject" value="הזמנת טל לוי - דף אמן">
+
+                    <div class="form-group">
+                        <label for="name">שם מלא</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">טלפון</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">תאריך האירוע</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">הודעה / בקשות מיוחדות</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-block">שריין תאריך</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 זיו הפקות - מייצגים את טל לוי.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
